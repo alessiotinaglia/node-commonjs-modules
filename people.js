@@ -36,3 +36,14 @@ console.log(myHobbies);
                                 //   Punto 3   // 
 // // // // // // // // // // // // //// // // // // // // // // // // // // // // //
 
+function anonymous(){
+    const person = names.newPerson("Alessio", "Tinaglia");
+    const hobbies = createHobbies('hobbyOne', 'hobbyTwo', 'hobbyThree');
+    return{
+        fullName: `${person.firstName} ${person.lastName}`, 
+        hobbies: hobbies.hobbies
+    }
+}
+
+const profilo = anonymous();
+console.log(profilo);
